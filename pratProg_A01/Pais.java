@@ -35,7 +35,7 @@ public class Pais {
 	// Obtém conexão com o banco de dados
 	public Connection obtemConexao() throws SQLException {
 		return DriverManager
-				.getConnection("jdbc:mysql://localhost:3306/atividade?user=root&password=allan&useSSL=false");
+				.getConnection("jdbc:mysql://localhost/mydb?user=root&password=allan&useSSL=false");
 	}
 	public void criar() {
 		String sqlInsert = "INSERT INTO Pais (nome, populacao, area) VALUES (?, ?, ?)";
